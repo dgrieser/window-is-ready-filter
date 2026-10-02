@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="org.gnome.shell.extensions.window-is-ready-filter.mode">
+    <value nick="blocklist" value="0"/>
+    <value nick="allowlist" value="1"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.window-is-ready-filter"
+          path="/org/gnome/shell/extensions/window-is-ready-filter/">
+    <key name="mode" enum="org.gnome.shell.extensions.window-is-ready-filter.mode">
+      <default>'blocklist'</default>
+      <summary>Filter mode</summary>
+      <description>blocklist: suppress notifications only for the listed apps. allowlist: suppress notifications for all apps except the listed ones.</description>
+    </key>
+    <key name="apps" type="as">
+      <default>[]</default>
+      <summary>Applications</summary>
+      <description>Desktop app IDs (e.g. google-chrome.desktop) or WM_CLASS values the filter applies to.</description>
+    </key>
+    <key name="recent-apps" type="as">
+      <default>[]</default>
+      <summary>Recently seen applications</summary>
+      <description>App IDs that recently requested attention, newest first. Written by the extension and shown in the preferences for quick adding.</description>
+    </key>
+  </schema>
+</schemalist>

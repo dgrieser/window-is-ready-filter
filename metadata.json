@@ -1,0 +1,9 @@
+{
+  "uuid": "window-is-ready-filter@david-grieser.de",
+  "name": "Window Is Ready Filter",
+  "description": "Suppresses the \"Window is ready\" notification per application, e.g. only for Chrome, Files or Terminal.",
+  "url": "https://github.com/dgrieser/window-is-ready-filter",
+  "settings-schema": "org.gnome.shell.extensions.window-is-ready-filter",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "version": 1
+}
